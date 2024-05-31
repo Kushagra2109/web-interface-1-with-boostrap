@@ -1,0 +1,229 @@
+body{
+    background-image: url(olga-thelavart-vS3idIiYxX0-unsplash.jpg);
+    
+    
+}
+.navbar{
+    background-color: gray;
+    display:flex;
+    position:relative;
+    border-radius: 5px;
+    
+}
+
+.ele{
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 80;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+}
+
+
+.logo{
+    
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ele:hover{
+    background: rgb(000, 000, 000, 0.5);
+}
+.login{
+    position: absolute;
+    right: 50px;
+
+}
+/* .hamburger{
+    position: absolute;
+    right: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 80;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    display: none;
+
+} */
+
+#ibox{
+    background-color: rgb(127, 255, 212, 0.4);
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    border-radius: 20px;
+    height: 500px;
+    width: 70%;
+    text-align: center;
+
+}
+.formbody{
+    background-image: url(pexels-photo-235985.jpeg);
+}
+
+.formdiv{
+    
+    background-color: rgb(255, 255, 255, 0.5);
+    align-items: center;
+    border-radius: 10%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    width: 1200px;
+    height: 800px;
+
+}
+
+#text{
+    padding-left: 20px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    margin-left: 40px;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+#labels{
+    display: flex;
+    padding-left: 20px ;
+    padding-top: 10px;
+    font-size: 20px;
+    margin: 20px;
+    
+    
+}
+
+.section1{
+    background-color: rgb(0, 0, 0, 0.5);
+    position:relative;
+    margin-top: 50px;
+    /* border-top-right-radius: 5%;
+    border-top-left-radius: 5%;*/
+} 
+
+.textblock{
+    color: white;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    font-size: 15px;
+
+}
+
+.section2{
+    margin-left: 33.99%;
+    margin-right: 33.99%;
+    margin-top: 100px;
+    position: relative;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+.ib{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid black; */
+    
+}
+.b3, .b2{
+    background-color: rgb(223, 220, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#suitsbutton{
+    font-size: 20px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    width: 300px; 
+    height: 50px; 
+    background-color: rgb(219, 207, 207); 
+    border: 4px solid black; 
+    border-radius: 4px;
+    margin-left: 42%;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#suitsbutton:hover{
+    opacity: 0.5;
+
+}
+
+@media screen and (max-width: 600px){
+    .textblock{
+        font-size: 10px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .ele{
+        display: none;
+    }
+}
+
+/* <======================================================>  gallery css*/
+
+.gallertouter{
+    position: relative;
+    
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 450px;
+    height: auto;
+    margin-left: 14px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: rgb(107, 101, 101);
+  }

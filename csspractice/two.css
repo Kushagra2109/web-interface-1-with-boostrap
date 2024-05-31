@@ -1,0 +1,93 @@
+.main{
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    
+}   
+
+.lc{
+    
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+    
+     
+} 
+.lc:hover{
+    transform:rotate(60deg);
+    
+}
+.rc:hover{
+    transform:rotate(60deg);
+    transition: all 1s ease-in-out 0s;
+}
+@keyframes rot {
+    50% {transform: rotate(180deg);}
+  }
+.rc{
+    
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     animation: rot 5s
+    
+     
+} 
+.l1{
+    border: 1px solid black;
+    border-top-left-radius: 100%;
+    background-color: aqua;
+    height: 248px;
+    /* width: 0px; */
+    flex-basis: 248px;
+}
+.l2{
+    border: 1px solid black;
+    border-top-right-radius: 100%;
+    background-color:blueviolet;
+    height: 248px;
+    /* width: 120px;     */
+    flex-basis: 248px;
+}
+.l3{
+    border: 1px solid black;
+    border-bottom-left-radius: 100%;
+    background-color: yellow;
+    height: 248px;
+    /* width: 120px;    */
+    flex-basis: 248px; 
+}
+.l4{
+    border: 1px solid black;
+    height: 248px;
+    background-color: brown;
+    border-bottom-right-radius: 100%;
+    /* width: 120px;     */
+    flex-basis: 248px; 
+}
+
+.rc{
+    
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+     margin: auto;
+     
+} 

@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="jsintro.css">
+    <script src="jsintro.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    
+    <title>jsintro</title>
+</head>
+<body align="center">
+
+    <nav style="background-color:  #074e37;" class="navbar navbar-expand-sm navbar-dark  pt-4 pb-4">
+        <div class="container d-flex justify-content-between">
+          <div class="leftnav d-flex ">
+          <a class="navbar-brand" href="javascript:void(0)"><img class="pe-4" src="csspractice/uomo web task/uomo logo.png" alt=""></a>
+          <div style="padding-left: 10px;  background-color: white;border-radius: 7px;" class="searchbar d-flex align-items-center p-3">
+            <input style="padding: 3px;border: none; padding-right: 10px; " type="text" id="productsearch" name="productsearch" placeholder="Search products...">
+            <select style="border: none;" id="sector" name="sector">
+                <option value="all">ALL CATEGORES</option>
+                <option value="men">MEN</option>
+                <option value="women">WOMEN</option>
+                <option value="kids">KIDS</option>
+
+            </select>
+             <i style="font-size: 25px; cursor: pointer;" class="fa-solid fa-magnifying-glass"></i>
+           </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="rightnav">
+           
+            
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto d-flex justify-content-between gap-4">
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"><i style="font-size: 25px;" class="text-white fa-regular fa-user icon"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"><i style="font-size: 25px;" class="text-white fa-regular fa-heart icon"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"><i style="font-size: 25px;" class="text-white fa-solid fa-bag-shopping icon"></i></a>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+          
+        </div>
+      </nav>
+      
+      
+
+    <div style="background-color: #86BC42;" class="container-fluid p-3  text-white text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Lets start with the bootstrap!</p> 
+    </div> 
+
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="csspractice/uomo web task/slideshow-pattern.png" alt="Los Angeles" class="d-block position-relative w-100">
+     </div>
+
+    <div class=" slider-inside-text position-absolute  z-3 d-flex flex-column align-items-baseline ">
+      <p class="dash" style="color: #86BC42; margin: 0px;">SHOP OUR FRESHEST</p>
+      <h1 style="margin: 0px;" ><span style="color: #074e37;" class="big">Fresh Hand-Picked Vegetables</span> </h1>
+      <h1 style="margin: 0px;"><span style="color:#86BC42 ;" class="big">Everyday</span></h1>
+      <p class="hover-underline-animation">Discover More...</p>
+  </div>
+   <img class=" vege position-absolute z-3 " src="csspractice/uomo web task/slideshow-character1.png" alt="">
+
+
+   
+    <div style="height: 58vh;" class="carousel-item">
+      <img src="csspractice/uomo web task/3rdbanner.jpg" alt="Chicago" class="d-block position-relative w-100">
+    </div>
+
+    
+
+    
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+</div>
+
+    <!-- strip -->
+
+  <div style="background-color: rgb(247, 245, 238);" class="container-fluid p-3 strip ">
+  <div class="container stripe-inside d-flex  justify-content-around">
+
+    <div class="delivery pb-4 pt-4 scard d-flex  gap-2 justify-content-center" >
+        <div class="strip-icons">
+        <i class="fa-solid fa-truck s-icons fa-3x" ></i>
+    </div>
+        <div class="delivery stext d-flex flex-column align-items-baseline">
+            <p class="mb-0 bold">FAST AND FREE DELIVERY</p>
+            <p class="text-body-secondary">Free delivery for all orders over $140</p>
+        </div>
+    </div>
+
+    <div class="support pb-4 pt-4 scard d-flex gap-2 justify-content-center">
+        <div class="strip-icons ">
+        <i class="fa-solid fa-phone s-icons fa-3x"></i>
+    </div>
+        <div class="support stext d-flex flex-column align-items-baseline">
+            <p class="mb-0 bold">24/7 CUSTOMER SUPPORT</p>
+            <p class="text-body-secondary">Friendly 24/7 customer support</p>
+        </div>
+    </div> 
+
+    <div class="refund pb-4 pt-4 scard d-flex gap-2 justify-content-center">
+        <div class="strip-icons">
+        <i class="fa-solid fa-shield s-icons fa-3x"></i>
+    </div>
+        <div class="refund stext d-flex flex-column align-items-baseline">
+            <p class="mb-0 bold">MONEY BACK GUARANTEE</p>
+            <p class="text-body-secondary">We return money within 30 days</p>
+        </div>
+    </div>
+
+    <div class="gifts pb-4 pt-4 scard d-flex gap-2 justify-content-center">
+        <div class="strip-icons">
+        <i class="fa-solid fa-gift s-icons fa-3x"></i>
+         </div>
+        <div class="gifts stext d-flex flex-column align-items-baseline">
+            <p class="mb-0 bold">MEMBER GIFTS</p>
+            <p class="text-body-secondary">Discount coupons weekends</p>
+        </div>
+    </div>
+
+
+</div>
+    </div> 
+
+      
+        <!-- product section using only one card template-->
+        <div class="container fproduct">
+
+
+          <div class="fproduct-header ps-4 pt-5 pe-5 d-flex justify-content-between pb-2">
+              <div class="header-left">
+                  <h2>Featured Products</h2>
+              </div>
+              <div class="header-right ">
+                  <ul class="d-flex justify-content-evenly list-unstyled gap-5">
+                      <li class="hover-underline-animation" >Best Sellers</li>
+                      <li class="hover-underline-animation" >Most Popular</li>
+                      <li class="hover-underline-animation" >Top 20</li>
+                      <li class="hover-underline-animation" >Best Rated</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 fproduct-fcards d-flex flex-wrap justify-content-lg-center">
+
+            <div class="col">
+            <div class=" card" >
+              <img  src="csspractice/uomo web task/featuredproducts/product-1.jpg" alt="Card image">
+              <div class="p-3 d-flex  flex-column align-items-baseline">
+                <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+                <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+                <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                  <div style="font-size: 10px;" class="stars text-warning">
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                  </div>
+
+                  <div style="font-size: 13px;" class="ratings">
+                      <p>321,345</p>
+                  </div>
+       </div>
+       <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+              </div>
+            </div>
+          </div>
+
+
+            <div class="col">
+            <div class=" card" >
+              <img  src="csspractice/uomo web task/featuredproducts/product-2.jpg" alt="Card image">
+              <div class="p-3 d-flex  flex-column align-items-baseline">
+                <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+                <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+                <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                  <div style="font-size: 10px;" class="stars text-warning">
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                  </div>
+
+                  <div style="font-size: 13px;" class="ratings">
+                      <p>321,345</p>
+                  </div>
+       </div>
+       <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+              </div>
+            </div>
+          </div>
+
+
+            <div class="col">
+            <div class=" card" >
+              <img src="csspractice/uomo web task/featuredproducts/product-3.jpg" alt="Card image">
+              <div class="p-3 d-flex  flex-column align-items-baseline">
+                <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+                <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+                <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                  <div style="font-size: 10px;" class="stars text-warning">
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                  </div>
+
+                  <div style="font-size: 13px;" class="ratings">
+                      <p>321,345</p>
+                  </div>
+       </div>
+       <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+              </div>
+            </div>
+          </div>
+
+            <div class="col">
+             <div class=" card" >
+              <img  src="csspractice/uomo web task/featuredproducts/product-4.jpg" alt="Card image">
+              <div class="p-3 d-flex  flex-column align-items-baseline">
+                <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+                <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+                <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                  <div style="font-size: 10px;" class="stars text-warning">
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                  </div>
+
+                  <div style="font-size: 13px;" class="ratings">
+                      <p>321,345</p>
+                  </div>
+       </div>
+       <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+              </div>
+            </div>
+          </div>
+
+            <div class="col">
+            <div class=" card" >
+              <img  src="csspractice/uomo web task/featuredproducts/product-5.jpg" alt="Card image">
+              <div class="p-3 d-flex  flex-column align-items-baseline">
+                <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+                <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+                <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                  <div style="font-size: 10px;" class="stars text-warning">
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                  </div>
+
+                  <div style="font-size: 13px;" class="ratings">
+                      <p>321,345</p>
+                  </div>
+       </div>
+       <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+              </div>
+            </div>
+          </div>
+
+            <div class="col">
+            <div class=" card" >
+              <img  src="csspractice/uomo web task/featuredproducts/product-6.jpg" alt="Card image">
+              <div class="p-3 d-flex  flex-column align-items-baseline">
+                <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+                <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+                <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                  <div style="font-size: 10px;" class="stars text-warning">
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                  </div>
+
+                  <div style="font-size: 13px;" class="ratings">
+                      <p>321,345</p>
+                  </div>
+       </div>
+       <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+              </div>
+            </div>
+          </div>
+
+            <div class="col">
+            <div class=" card" >
+              <img  src="csspractice/uomo web task/featuredproducts/product-7.jpg" alt="Card image">
+              <div class="p-3 d-flex  flex-column align-items-baseline">
+                <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+                <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+                <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                  <div style="font-size: 10px;" class="stars text-warning">
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                  </div>
+
+                  <div style="font-size: 13px;" class="ratings">
+                      <p>321,345</p>
+                  </div>
+       </div>
+       <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+              </div>
+            </div>
+          </div>
+
+            <div class="col">
+            <div class=" card" >
+              <img  src="csspractice/uomo web task/featuredproducts/product-8.jpg" alt="Card image">
+              <div class="p-3 d-flex  flex-column align-items-baseline">
+                <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+                <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+                <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                  <div style="font-size: 10px;" class="stars text-warning">
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                      <i class="fa-solid fa-star star"></i>
+                  </div>
+
+                  <div style="font-size: 13px;" class="ratings">
+                      <p>321,345</p>
+                  </div>
+       </div>
+       <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+              </div>
+            </div>
+          </div>
+              
+
+          </div>
+      </div>
+      <p class="pt-5">product section using whole premade cards section template</p>
+      <!-- product section using whole premade cards section template -->
+      <div class="container ">
+
+      <div class=" row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+
+       <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+      <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+       <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+         <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+         <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+        
+
+          <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="csspractice/uomo web task/featuredproducts/product-10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+                </div>
+                <p class="mb-2" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+       </div>
+
+       <!-- category -->
+       <div style="background-color: rgb(247, 245, 238);" class="category">
+<div class="container p-5">
+  <div class="fproduct-header  d-flex justify-content-between pb-2">
+    <div class="header-left">
+        <h2>Categories</h2>
+    </div>
+    <div class="header-right ">
+        <p>SEE ALL CATEGORES</p>
+    </div>
+</div>
+
+       <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-5 g-4">
+        <div class="col ">
+          <div class="card border-0">
+            <img src="csspractice/uomo web task/featuredproducts/category-1.jpg"  alt="...">
+          </div>
+            <div class="card-body d-flex justify-content-center">
+             
+              <p class="mt-4" style="font-size: 15px;">Fruits</p>
+              
+
+                
+            </div>
+          </div>
+        
+
+
+          <div class="col ">
+            <div class="card border-0">
+              <img src="csspractice/uomo web task/featuredproducts/category-2.jpg"  alt="...">
+            </div>
+              <div class="card-body d-flex justify-content-center">
+               
+                <p class="mt-4" style="font-size: 15px;">Bakery</p>
+                
+              </div>
+            </div>
+
+         <div class="col ">
+          <div class="card border-0 ">
+            <img src="csspractice/uomo web task/featuredproducts/category-3.jpg"  alt="...">
+          </div>
+            <div class="card-body d-flex justify-content-center">
+             
+              <p class="mt-4" style="font-size: 15px;">Fish</p>
+              
+            </div>
+          </div>
+
+          <div class="col ">
+            <div class="card border-0">
+              <img src="csspractice/uomo web task/featuredproducts/category-4.jpg"  alt="...">
+            </div>
+              <div class="card-body d-flex justify-content-center">
+                
+                <p class="mt-4" style="font-size: 15px;">Milk</p>
+                
+              </div>
+            </div>
+
+
+         <div class="col ">
+          <div class="card border-0">
+            <img src="csspractice/uomo web task/featuredproducts/category-5.jpg"  alt="...">
+          </div>
+            <div class="card-body d-flex justify-content-center">
+             
+              <p class="mt-4" style="font-size: 15px;">Vegetables</p>
+              
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+       </div>
+
+       <!--top selling  -->
+
+       <div class="container py-5 fproduct d-flex flex-column ">
+
+
+        <div class="fproduct-header ps-4 pe-5 d-flex justify-content-between pb-2">
+            <div class="header-left">
+                <h2>Top Selling</h2>
+            </div>
+            <div class="header-right ">
+                <p>see all products</p>
+            </div>
+        </div>
+
+        <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-5 g-4 fproduct-fcards d-flex flex-wrap ">
+
+          <div class="col">
+          <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/product-11.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-1" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col">
+          <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/product-12.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-1" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col">
+          <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/product-13.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-1" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+          <div class="col">
+           <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/product-14.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-1" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+          <div class="col">
+          <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/product-15.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-1" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+            
+
+        </div>
+    </div>
+    
+      <!-- discount -->
+
+      <div class="container py-5 fproduct d-flex flex-column ">
+            <div class="header-left d-flex ps-4 justify-content-start">
+                <h2>Discount</h2>
+            </div>
+            
+        
+
+        <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-5 g-4 fproduct-fcards d-flex flex-wrap justify-content-lg-center">
+
+          <div class="col">
+          <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/deal-bg.jpg" alt="Card image">
+            <div class="card-img-overlay d-flex flex-column justify-content-center text-white">
+                <p class="h1 ">$20</p>
+                <p class="h4" >Under Products</p>
+                <p>Limited Time Only</p>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col">
+          <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/product-16.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-0" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col">
+          <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/product-17.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-0" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+          <div class="col">
+           <div class=" card" >
+            <img src="csspractice/uomo web task/featuredproducts/product-18.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-0" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+          <div class="col">
+          <div class=" card" >
+            <img  src="csspractice/uomo web task/featuredproducts/product-19.jpg" alt="Card image">
+            <div class="card-body d-flex  flex-column align-items-baseline">
+              <p class="mb-2" style="font-size: 14px; color: #767676;">Fruits</p>
+              <p class="mb-1" style="font-size: 15px;">Organic Bartlett Pear</p>
+              <div style="font-size: 15px;" class="stars-ratings d-flex gap-2">
+
+                <div style="font-size: 10px;" class="stars text-warning">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div style="font-size: 13px;" class="ratings">
+                    <p>321,345</p>
+                </div>
+     </div>
+     <p class="mb-0" style="color: #86BC42;">$35.90</p> 
+            </div>
+          </div>
+        </div>
+
+            
+
+        </div>
+    </div>
+
+
+    <div style="background-color: #86BC42;" class="whatsapp ">
+      <div class="container whatsapp-inside p-5 d-flex justify-content-between">
+      <span style=" gap: 20px; " class="whatsapp-left d-flex">
+          <i style="font-size: 50px; color: white;" class="fa-brands fa-whatsapp"></i>
+          <p style="font-size: 25px; color: white;">Whatsapp Ordering Service</p>
+      </span>
+      <span style="font-size: 25px;color: white;">
+          Place Your Orders At <span style="color: #074e37;">+1 246-345-0695</span>
+      </span>
+  </div>
+</div>
+
+     
+    <!-- footer -->
+
+    <div style="background-color: #074e37;" class="footer">
+
+    
+      <div  style="color: white; font-size: 15px;" class="container footer-inside d-flex">
+  
+          <div class="uomo ">
+              <ul class="list-unstyled d-flex flex-column align-items-baseline ps-4">
+                  <li class="pb-5"><img  src="uomo logo.png" alt=""></li>
+                  <li><p>1418 River Drive Site 35 <br>CA 9622 United States</p></li>
+                  <li><p>sale@uomo.com <br>+1 246-345-0695</p></li>
+                  <li><div  class="social-media d-flex pt-4 gap-3">
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-youtube"></i>
+                      <i class="fa-brands fa-pinterest"></i>
+                  </div></li>
+              </ul>
+          </div>
+  
+          <div class="company ">
+              <ul class="list-unstyled d-flex flex-column align-items-baseline ps-4">
+              <li class="pb-4" ><p>COMPANY</p></li>
+              <li><p>About Us</p></li>
+              <li><p>Careers</p></li>
+              <li><p>Affiliates</p></li>
+              <li><p>Blog</p></li>
+              <li><p>Contact Us</p></li>
+          </ul>
+              
+          </div>
+  
+
+          <div class="shop ">
+              
+  
+              <ul class="list-unstyled d-flex flex-column align-items-baseline ps-4">
+                  <li class="pb-4" ><p>SHOP</p></li>
+                  <li><p>New Arrivals</p></li>
+                  <li><p>Accessories</p></li>
+                  <li><p>Men</p></li>
+                  <li><p>Women</p></li>
+                  <li><p>Shop All</p></li>
+              </ul>
+              
+          </div>
+  
+          <div class="help ">
+              
+              
+              <ul class="list-unstyled d-flex flex-column align-items-baseline ps-4">
+                  <li class="pb-4" ><p>HELP</p></li>
+                  <li><p>Customer Service</p></li>
+                  <li><p>My Account</p></li>
+                  <li><p>Find a Store</p></li>
+                  <li><p>Find a Store</p></li>
+                  <li><p>Legal & Privacy</p></li>
+                  <li><p>Find a Store</p></li>
+                  <li><p>Legal & Privacy</p></li>
+                 
+              
+          </div>
+  
+  
+          <div class="suscribe ">
+              <ul class="list-unstyled d-flex flex-column align-items-baseline ps-4">
+                  <li class="pb-4" > 
+                      <p >SUSCRIBE</p>
+                  </li>
+                  <li>
+                      <p style="text-align: left;">Be the first to get the latest news about trends, promotions, and much more!</p>
+                  </li>
+                  <li>
+                      <p><input style="padding: 17px; padding-right: 90px;  margin-bottom: 20px;" type="text" id="productsearch" name="productsearch" placeholder="Your Emiail Address "></p>
+                  </li>
+                  <li>
+                      <p><div  class="downlaods d-flex gap-3">
+                          <div  class="apple d-flex gap-2">
+                              <i style="font-size: 30px;"class="fa-brands fa-apple "></i>
+                              <p style="font-size: 10px;">Dowload the app from apple store</p>
+                          </div>
+                          <div  class="playstore d-flex gap-2">
+                              <i style="font-size: 30px;" class="fa-brands fa-google-play "></i>
+                              <p style="font-size: 10px;">Dowload the app from Playstore </p>
+                          </div>
+                      </div></p>
+                  </li>
+              </ul>
+            
+          </div>
+      </div>
+  
+  
+  
+  <hr style="margin-top: 100px;" class="container">
+  
+      <div style="padding-bottom: 20px;" class="container liscense d-flex justify-content-between">
+          <div class="header-left">
+              <p style="color: white; ">Featured Products</p>
+          </div>
+          <div class="header-right ">
+              <ul  class="d-flex list-unstyled gap-4">
+                  <li style="color: white;">Currency  </li>
+                  <li style="color: white;">Language</li>
+                  <li><select style="border: none; background-color: #074e37; color: white; " id="language" name="language">
+                      <option style="color: white;background-color:#86BC42;" value="all">US ENGLISH</option>
+                      <option style="color: white;background-color:#86BC42;" value="men">UK ENGLISH</option>
+                      <option style="color: white;background-color:#86BC42;" value="women">FRENCH</option>
+                      <option style="color: white;background-color:#86BC42;" value="kids">GERMAN</option></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+    
+  
+
+
+
+ <script src="https://kit.fontawesome.com/e42dc4ae36.js" crossorigin="anonymous"></script>
+</body>
+</html>

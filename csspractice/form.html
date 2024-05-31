@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="navbar.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="formbody">
+
+    <div class="formdiv">
+        <form>
+            <h1 style="display: flex; justify-content: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px; letter-spacing: 2px;">Sign-Up</h1>
+            <label id="labels" for="fname">First Name</label>
+            <input type="text" name="fname" id="text" placeholder="enter firstname" required>
+          
+            <label id="labels" for="fname">Last Name</label>          
+            <input type="text" name="lname" id="text" placeholder="enter lastname" required>
+
+            <label id="labels" for="email">E-mail</label>
+            <input type="text" name="email" id="text" placeholder="enter email" required>
+            
+            <label id="labels" for="number"> Phone Number</label>
+            <input type="text" name="number" id="text" placeholder="enter phone number" required>
+            
+            <label id="labels" for="dob">Select Date Of Birth</label>
+            <input required style="display: block ;  margin-left: 40px; margin-bottom: 20px; width: 200px; height: 40px; font-size: 15px; background-color:beige;" type="date" name="dob" id="dob" placeholder="dd-mm-yyyy">
+            
+            
+            <p style="margin-left: 40px; font-size: 20px;">Select Gender</p>
+            
+            <input  style="margin-left: 40px;" type="radio" name="gender" id="male" required>
+            <label for="male">Male </label>
+            <input style="margin-left: 40px;" type="radio" name="gender" id="female" >
+            <label  for="female">Female </label>
+            
+            <input onclick="pic()" style="display: block; width: 16%;height: 50px; font-size: 20px; margin-left: 42%; margin-right: 42%; letter-spacing: 1.5px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; background-color: rgb(240, 240, 199);" type="submit" id="submit" name="submit">
+            <script>
+             function pic(){
+                alert("thank you for filling the form");
+             }
+            </script>
+             
+        </form>
+    </div>
+    
+</body>
+</html>

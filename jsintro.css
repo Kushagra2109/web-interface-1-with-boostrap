@@ -1,0 +1,34 @@
+.slider-inside-text{
+    left: 350px;
+    top: 200px;
+}
+.vege{
+    right: 200px;
+    top: 150px;
+}
+.s-icons{
+    color: #86BC42;
+}
+.stext{
+    font-size: 12px;
+    padding: 5px;
+}
+.bold{
+    font-size: 15px;
+    font-weight: bold;
+}
+.company,.shop,.help{
+    flex-basis: 19%; 
+}
+.uomo, .suscribe{
+    flex-basis: 23%;
+}
+.footer-inside{
+    padding-top: 120px;
+}
+.footer p{
+    text-align: left;
+}
+.big{
+    font-size: 60px;
+}

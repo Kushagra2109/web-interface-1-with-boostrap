@@ -1,0 +1,90 @@
+.main{
+    border: 3px solid black;
+    position: fixed;
+    top: 2px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+.sb{
+    position: absolute;
+    border: 3px solid black;
+    width: 50px;
+    height: 50px;
+}
+.one{
+    left: 0px;
+    top: 0px;
+}
+.two{
+    right: 0px;
+    top: 0px;
+}
+.three{
+    left: 0px;
+    bottom: 0px;
+}
+.four{
+    right: 0px;
+    bottom: 0px;
+}
+
+.main2{
+    border: 3px solid black;
+    height: 400px;
+    width: 50%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    margin: auto;
+    overflow: auto;
+}
+
+.one2{
+    left: 0px;
+    top: 0px;
+}
+.two2{
+    right: 0px;
+    top: 0px;
+}
+.three2{
+    left: 0px;
+    bottom: 0px;
+}
+.four2{
+    right: 0px;
+    bottom: 0px;
+}
+.cl{
+    border: 1px solid black;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    margin: auto;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.cone{
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+    background-color: aqua;
+}
+.ctwo{
+    bottom: -50px;
+    left: -50px;
+    z-index: 1;
+    background-color: violet;
+}
+.cthree{
+    right: -50px;
+    z-index: 0;
+    background-color: black;
+}
